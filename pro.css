@@ -1,0 +1,232 @@
+/* CSS RESET */
+*{
+    margin: 0px;
+    padding: 0px ;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS VARIABLES */
+:root{ /*global variable*/
+    --navbar-height:59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center; /*align hole iteam in centre*/ 
+    position: sticky; 
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+
+}
+
+#logo img{
+  height:100px;
+  margin: 10px 8px;
+
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+/* FOR BACKGROUND OF NAVBAR */
+#navbar::before{
+   content:"";
+   background-color: black;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity:0.4;
+}
+
+#navbar ul li{
+    list-style: none;  /* list dots will be removed */
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none; /* underline removal */
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+}
+
+/* FOR BACKGROUND OF SECTION */
+#home::before{
+   content:"";
+   background: url('food.jpg') no-repeat center center/cover;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   height: 642px;
+   width: 100%;
+   z-index: -1;
+   opacity:0.89;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+/* Services Section */
+#services{
+  margin: 80px;
+  display: flex;
+}
+
+#services .box{
+    border:2px solid brown;
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 54px;
+    border-radius: 28px;
+    background-color: rgb(160, 224, 224);
+    margin-bottom: 20px;
+}
+
+#services .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p{
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+/* Client Section */
+#client-section{
+    
+    position: relative;
+}
+
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url('R.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#clients img{
+    height: 124px;
+}
+
+.client-items{
+    padding: 24px;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('contact.jpg') no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+#contact-box input,
+#contact textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* UTILITY CLASSES */
+.h-primary{
+    font-size:3.8rem;
+    padding: 12px;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.h-secondary{
+ font-size: 2.3rem;
+ padding: 12px;
+ font-family: 'Edu TAS Beginner', cursive;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
